@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 class="customClass" id = " CustomID">jQuery Intro</h1>
+   <p class="customClass">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, delectus velit quasi numquam eius autem nisi rerum mollitia voluptatem vel, laboriosam sapiente soluta possimus, excepturi quis odit quod inventore consectetur.
+   </p> 
+   <p id="CustomID">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cupiditate delectus blanditiis accusantium corrupti, nostrum facilis distinctio praesentium illum vero quia quo dolorem ad. Aspernatur sit blanditiis nemo necessitatibus iusto.
+   </p>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("h1,p").text("Change to jQuery #1")
+            $("p.customClass").text("Change via Jquery #2")
+            $("p#CustomID").text("Change via jquery #3")
+        })
+    </script>
+</body>
+</html>
